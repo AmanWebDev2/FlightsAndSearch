@@ -109,5 +109,5 @@ module.exports = {
     destroy,
     get,
     update,
-    getAll
+    // getAll
 }   
