@@ -12,7 +12,7 @@ const setupAndStartServer = async () => {
     const app = express();  
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({extended:true}));
-    app.use('api', ApiRoutes);
+    app.use('/api', ApiRoutes);
     app.listen(PORT, async() => {
         console.log(`Server started at ${PORT}`);
          // console.log(db.city);
